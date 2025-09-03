@@ -49,7 +49,7 @@ class LoginActivity : AppCompatActivity() {
             if (validateCredentials(username, password)) {
                 // Save login state
                 sharedPreferences.edit {
-                    putBoolean("isLoggedIn", false)
+                    putBoolean("isLoggedIn", true)
                 }
                 navigateToProfile()
             } else {
